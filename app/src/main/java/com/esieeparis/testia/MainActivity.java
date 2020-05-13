@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("DigitClassifier", "Error to setting up digit classifier");
         }
 
-        System.out.println("JUI LA");
+        System.out.println("No exception bounded to initialisation");
 
         /*try {
             classifyImage();
@@ -54,16 +54,16 @@ public class MainActivity extends AppCompatActivity {
         Bitmap bitmap = BitmapFactory.decodeStream(image);
         imageView.setImageBitmap(bitmap);
 
-        System.out.println("JUI LA 2");
+        System.out.println("Image successfully displayed");
 
         if(bitmap != null && imageClassifier.isInitialized()) {
             imageClassifier.classifyAsync(bitmap);
             text = imageClassifier.getPrediction();
-            System.out.println("coucou " + text);
+            System.out.println("Prediction: " + text);
             predictedTextView.setText(text);
         }
 
-        System.out.println("JUI LA 4");
+        System.out.println("Work done.");
     }
 
     @Override

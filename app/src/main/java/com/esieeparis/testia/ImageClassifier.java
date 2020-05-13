@@ -109,7 +109,7 @@ public final class ImageClassifier {
         } else {
             Bitmap resizedImage = Bitmap.createScaledBitmap(bitmap, inputImageWidth, inputImageHeight, true);
             ByteBuffer byteBuffer = convertBitmapToByteBuffer(resizedImage);
-            System.out.println("done");
+            System.out.println("Image conversion done");
 
             float[][] output = {};
             System.out.println(byteBuffer);
